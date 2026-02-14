@@ -67,11 +67,11 @@ const Hero211 = ({ className }: Hero211Props) => {
       <div className="container relative z-10 mx-auto">
         <div className="mx-auto flex max-w-2xl flex-col items-center justify-center gap-4">
           <h1 className="text-center font-calSans text-5xl lg:text-6xl">
-            We don&apos;t Believe in talk we deliver Results
+            Ready to put AI to work for your business?
           </h1>
           <p className="px-10 text-center text-muted-foreground lg:text-lg">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus odit eius tenetur quaerat, aperiam, iste ea ex
+            Book a free discovery call and we&apos;ll show you exactly how a
+            custom AI agent or website can transform your operations.
           </p>
         </div>
 
@@ -114,11 +114,6 @@ const Hero211 = ({ className }: Hero211Props) => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-        <div className="relative z-10 mx-auto mt-10 flex justify-center">
-          <Button className="rounded-full px-4 py-2 active:scale-105">
-            Get Started
-          </Button>
         </div>
       </div>
 

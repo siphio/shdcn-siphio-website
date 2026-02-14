@@ -9,10 +9,10 @@ const Feature102 = ({ className }: Feature102Props) => {
     <section className={cn("pt-12 pb-32", className)}>
       <div className="container mx-auto">
         <div className="mx-auto flex max-w-3xl flex-col justify-center gap-7 md:text-center">
-          <h2 className="text-2xl md:text-4xl">Launch with Assurance</h2>
+          <h2 className="text-2xl md:text-4xl">How We Build Your AI Solution</h2>
           <p className="text-sm text-muted-foreground md:text-base">
-            Simplify your workflow with our tools that provide clear insights,
-            minimizing the complexity of managing intricate deployment data.
+            From discovery to deployment, our process is designed to deliver
+            production-ready AI agents and websites in weeks — not months.
           </p>
         </div>
         <div className="mx-auto mt-14 flex max-w-5xl flex-col gap-4 lg:px-16">
@@ -27,11 +27,11 @@ const Feature102 = ({ className }: Feature102Props) => {
               </div>
               <div className="flex flex-col justify-center gap-5 px-0 min-[960px]:gap-6 min-[960px]:px-4 min-[960px]:py-4">
                 <h3 className="text-xl min-[960px]:text-2xl">
-                  Monitor Deployments live
+                  Discovery & Strategy
                 </h3>
                 <p className="text-sm text-muted-foreground min-[960px]:text-base">
-                  Track your deployments with clarity, seeing updates take place
-                  as they happen.
+                  We map your workflows, identify automation opportunities, and
+                  architect a solution tailored to your business goals.
                 </p>
               </div>
             </div>
@@ -54,12 +54,12 @@ const Feature102 = ({ className }: Feature102Props) => {
               </div>
               <div className="flex flex-col justify-center gap-5 px-0 min-[960px]:gap-6 min-[960px]:px-4 min-[960px]:py-4">
                 <h3 className="text-xl min-[960px]:text-2xl">
-                  Immediate Issue Detection
+                  Build & Iterate
                 </h3>
 
                 <p className="text-sm text-muted-foreground min-[960px]:text-base">
-                  Spot issues instantly and address them with precise metrics
-                  for optimized performance.
+                  We develop your AI agent or website in rapid sprints, sharing
+                  progress at every stage so you stay in control.
                 </p>
               </div>
             </div>
@@ -81,12 +81,12 @@ const Feature102 = ({ className }: Feature102Props) => {
               </div>
               <div className="flex flex-col justify-center gap-5 px-0 min-[960px]:gap-6 min-[960px]:px-4 min-[960px]:py-4">
                 <h3 className="text-xl min-[960px]:text-2xl">
-                  Revert to a Stable Version
+                  Launch & Scale
                 </h3>
 
                 <p className="text-sm text-muted-foreground min-[960px]:text-base">
-                  With just a few actions, revert to a previous version and
-                  restore system health swiftly.
+                  We deploy to production, monitor performance, and continuously
+                  optimize — so your solution grows with your business.
                 </p>
               </div>
             </div>

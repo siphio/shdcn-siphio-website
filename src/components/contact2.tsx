@@ -17,13 +17,13 @@ interface Contact2Props {
 }
 
 const Contact2 = ({
-  title = "Contact Us",
-  description = "We are available for questions, feedback, or collaboration opportunities. Let us know how we can help!",
-  phone = "(123) 34567890",
-  email = "email@example.com",
+  title = "Let's Talk",
+  description = "Have a project in mind or want to explore what AI can do for your business? Reach out — we'd love to hear from you.",
+  phone = "",
+  email = "hello@siphio.com",
   web = {
-    label: "shadcnblocks.com",
-    url: "https://shadcnblocks.com",
+    label: "siphio.com",
+    url: "https://siphio.com",
   },
   className,
 }: Contact2Props) => {

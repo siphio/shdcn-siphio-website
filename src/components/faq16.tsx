@@ -13,44 +13,44 @@ import {
 
 const FAQ_QUESTIONS = [
   {
-    question: "What is a FAQ?",
+    question: "What kind of AI agents does Siphio build?",
     answer:
-      "A FAQ is a list of frequently asked questions and answers on a particular topic.",
+      "We build custom AI agents for lead generation, customer support, internal operations, data analysis, and more. Each agent is tailored to your specific workflows and integrates directly with your existing tools.",
   },
   {
-    question: "What is the purpose of a FAQ?",
+    question: "How long does it take to build and deploy an agent?",
     answer:
-      "The purpose of a FAQ is to provide answers to common questions and help users find the information they need quickly and easily.",
+      "Most projects go from discovery to production in 2–6 weeks depending on complexity. We work in rapid sprints with continuous feedback loops so you see progress from day one.",
   },
   {
-    question: "How do I create a FAQ?",
+    question: "Do you also build websites?",
     answer:
-      "To create a FAQ, you need to compile a list of common questions and answers on a particular topic and organize them in a clear and easy-to-navigate format.",
+      "Yes. We design and develop high-performance websites optimized for speed, SEO, and conversion. Many clients pair a new site with an AI agent to maximize impact.",
   },
   {
-    question: "What are the benefits of a FAQ?",
+    question: "What technologies do you use?",
     answer:
-      "The benefits of a FAQ include providing quick and easy access to information, reducing the number of support requests, and improving the overall user experience.",
+      "We work with cutting-edge frameworks including Next.js, React, Tailwind CSS, and leverage the latest AI models from OpenAI, Anthropic, and open-source alternatives depending on your needs.",
   },
   {
-    question: "What is a FAQ?",
+    question: "Can you integrate with our existing systems?",
     answer:
-      "A FAQ is a list of frequently asked questions and answers on a particular topic.",
+      "Absolutely. Our agents are designed to plug into your current stack — CRMs, databases, APIs, Slack, email, and more. We handle the integration so you don't have to.",
   },
   {
-    question: "What is the purpose of a FAQ?",
+    question: "What does pricing look like?",
     answer:
-      "The purpose of a FAQ is to provide answers to common questions and help users find the information they need quickly and easily.",
+      "Every project is scoped individually based on complexity and requirements. Book a call with us and we'll provide a transparent quote after understanding your needs.",
   },
   {
-    question: "How do I create a FAQ?",
+    question: "Do you offer ongoing support after launch?",
     answer:
-      "To create a FAQ, you need to compile a list of common questions and answers on a particular topic and organize them in a clear and easy-to-navigate format.",
+      "Yes. We offer maintenance and optimization packages to ensure your agents and websites continue performing at their best as your business evolves.",
   },
   {
-    question: "What are the benefits of a FAQ?",
+    question: "How do we get started?",
     answer:
-      "The benefits of a FAQ include providing quick and easy access to information, reducing the number of support requests, and improving the overall user experience.",
+      "Reach out through our contact form or book a call. We'll schedule a free discovery session to understand your goals and map out the right solution.",
   },
 ];
 

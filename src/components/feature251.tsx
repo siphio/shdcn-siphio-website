@@ -31,12 +31,12 @@ const Feature251 = ({ className }: Feature251Props) => {
           <Card className="relative h-96 w-166 rounded-3xl border">
             <CardHeader>
               <h3 className="text-2xl font-semibold tracking-tight">
-                Customizable Workflows
+                Multi-Platform Integration
               </h3>
               <p className="mt-2 text-muted-foreground/70">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt Lorem ipsum dolor sit amet,
-                consectetur
+                Our agents connect seamlessly to your existing tools — CRMs,
+                databases, APIs, and more — so automation fits into your
+                stack, not around it.
               </p>
             </CardHeader>
             <CardContent ref={containerRef1} className="relative ml-5">
@@ -97,10 +97,11 @@ const Feature251 = ({ className }: Feature251Props) => {
           <Card className="h-96 w-full rounded-3xl border md:w-83">
             <CardHeader>
               <h3 className="text-2xl font-semibold tracking-tight">
-                Smart Task Tracking{" "}
+                Intelligent Automation
               </h3>
               <p className="text-muted-foreground/70">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                Agents that learn, adapt, and handle complex tasks — from lead
+                qualification to customer support — without human intervention.
               </p>
             </CardHeader>
             <CardContent
@@ -141,10 +142,11 @@ const Feature251 = ({ className }: Feature251Props) => {
             </CardContent>
             <CardHeader className="mt-auto">
               <h3 className="text-2xl font-semibold tracking-tight">
-                Seamless Integration & Real-Time Collaboration
+                Websites That Convert
               </h3>
               <p className="text-muted-foreground/70">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                High-performance sites engineered for speed, SEO, and conversion
+                — not just aesthetics.
               </p>
             </CardHeader>
           </Card>
@@ -152,12 +154,12 @@ const Feature251 = ({ className }: Feature251Props) => {
           <Card className="h-96 w-166 overflow-hidden rounded-3xl border">
             <CardHeader>
               <h3 className="text-2xl font-semibold tracking-tight">
-                Trusted by 100k Users{" "}
+                Global Reach, Local Precision
               </h3>
               <p className="text-muted-foreground/70">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt Lorem ipsum dolor sit amet,
-                consectetur
+                We build for businesses worldwide — deploying agents and
+                infrastructure that operate across time zones, languages, and
+                markets without missing a beat.
               </p>
             </CardHeader>
 

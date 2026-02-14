@@ -16,12 +16,12 @@ const Feature234 = ({ className }: Feature234Props) => {
     <section className={cn("bg-background pt-40 pb-32", className)}>
       <div className="container mx-auto flex flex-col items-center">
         <h1 className="mx-auto max-w-4xl text-center font-inter text-[70px] leading-[65px] font-semibold tracking-tighter lg:text-[85px] lg:leading-[86px]">
-          A place to display your masterpiece
+          AI agents and websites built to scale your business
         </h1>
         <CardsContainer />
         <p className="mx-auto max-w-xl text-center font-inter text-lg font-medium text-black">
-          Artists can finely craft components built with React, Tailwind, and
-          Shadcn UI. Developers can copy and paste them.
+          We design and deploy custom AI agents and high-performance websites
+          that automate workflows, engage customers, and drive real revenue.
         </p>
         <div className="mt-10 flex items-center gap-2">
           <Button
@@ -29,14 +29,14 @@ const Feature234 = ({ className }: Feature234Props) => {
             variant="default"
             className="block h-fit w-fit rounded-full px-6 py-2 text-sm leading-loose"
           >
-            <a href="#">Join for $9.99/m</a>
+            <a href="#contact">Book a Call</a>
           </Button>
           <Button
             asChild
             variant="secondary"
             className="block h-fit w-fit rounded-full px-6 py-2 text-sm leading-loose"
           >
-            <a href="#">View on Github</a>
+            <a href="#features">See Our Work</a>
           </Button>
         </div>
       </div>
