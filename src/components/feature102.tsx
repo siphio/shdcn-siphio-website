@@ -36,8 +36,8 @@ const Feature102 = ({ className }: Feature102Props) => {
               </div>
             </div>
             <img
-              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
-              alt="placeholder"
+              src="/discovery-strategy.png"
+              alt="Discovery and strategy illustration showing magnifying glass analyzing workflow nodes"
               className="z-10 aspect-video w-full rounded-xl border object-cover min-[960px]:max-h-56 min-[960px]:w-auto"
             />
           </div>
