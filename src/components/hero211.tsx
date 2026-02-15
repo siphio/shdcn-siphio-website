@@ -80,7 +80,7 @@ const Hero211 = ({ className }: Hero211Props) => {
             loop={true}
             grabCursor={true}
             style={{ width: 300, height: 330, borderRadius: 30 }}
-            className="border bg-muted [&_.swiper-slide]:flex [&_.swiper-slide]:items-center [&_.swiper-slide]:justify-center [&_.swiper-slide]:rounded-[25px] [&_.swiper-slide]:bg-black [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet]:opacity-50 [&_.swiper-pagination-bullet-active]:opacity-100"
+            className="border bg-muted [&_.swiper-slide]:flex [&_.swiper-slide]:items-center [&_.swiper-slide]:justify-center [&_.swiper-slide]:rounded-[25px] [&_.swiper-slide]:bg-card [&_.swiper-pagination-bullet]:bg-foreground [&_.swiper-pagination-bullet]:opacity-50 [&_.swiper-pagination-bullet-active]:opacity-100"
             autoplay={{
               delay: 1500,
               disableOnInteraction: true,
