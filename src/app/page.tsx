@@ -4,7 +4,7 @@ import { Feature251 } from "@/components/feature251";
 import { Feature102 } from "@/components/feature102";
 import { Faq16 } from "@/components/faq16";
 import { Hero211 } from "@/components/hero211";
-import { Contact2 } from "@/components/contact2";
+import { ProjectCta } from "@/components/project-cta";
 import { Footer12 } from "@/components/footer12";
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
       {/* CTA */}
       <Hero211 />
       {/* Contact */}
-      <Contact2 />
+      <ProjectCta />
       {/* Footer */}
       <Footer12 />
     </main>
