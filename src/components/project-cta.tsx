@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Loader2 } from "lucide-react";
 import { useState } from "react";
 
 import { cn } from "@/lib/utils";
@@ -14,14 +14,25 @@ interface ProjectCtaProps {
   className?: string;
 }
 
-const interests = ["AI Agent", "Website", "Both", "Not sure yet"];
+const interests = [
+  "AI Agent",
+  "Website",
+  "Automated Workflow",
+  "Both",
+  "Not sure yet",
+];
 
 const ProjectCta = ({ className }: ProjectCtaProps) => {
   const [selectedInterest, setSelectedInterest] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   return (
-    <section className={cn("pt-24 pb-32", className)}>
+    <section id="contact" className={cn("pt-24 pb-32", className)}>
       <div className="container mx-auto">
         <div className="mx-auto max-w-5xl overflow-hidden rounded-3xl border bg-card shadow-sm">
           <div className="grid gap-0 lg:grid-cols-5">
@@ -61,9 +72,37 @@ const ProjectCta = ({ className }: ProjectCtaProps) => {
                 </div>
               ) : (
                 <form
-                  onSubmit={(e) => {
+                  onSubmit={async (e) => {
                     e.preventDefault();
-                    setSubmitted(true);
+                    setError(null);
+                    setIsSubmitting(true);
+                    try {
+                      const res = await fetch("/api/contact", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                          name,
+                          email,
+                          interest: selectedInterest ?? "Not sure yet",
+                          message,
+                        }),
+                      });
+                      if (!res.ok) {
+                        const body = await res.json().catch(() => ({}));
+                        throw new Error(
+                          body.error || "Something went wrong. Please try again.",
+                        );
+                      }
+                      setSubmitted(true);
+                    } catch (err) {
+                      setError(
+                        err instanceof Error
+                          ? err.message
+                          : "Something went wrong. Please try again.",
+                      );
+                    } finally {
+                      setIsSubmitting(false);
+                    }
                   }}
                   className="flex flex-col gap-5"
                 >
@@ -76,6 +115,9 @@ const ProjectCta = ({ className }: ProjectCtaProps) => {
                         type="text"
                         placeholder="Your name"
                         required
+                        disabled={isSubmitting}
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                       />
                     </div>
                     <div className="grid w-full items-center gap-1.5">
@@ -85,6 +127,9 @@ const ProjectCta = ({ className }: ProjectCtaProps) => {
                         type="email"
                         placeholder="you@company.com"
                         required
+                        disabled={isSubmitting}
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
                   </div>
@@ -99,12 +144,14 @@ const ProjectCta = ({ className }: ProjectCtaProps) => {
                         <button
                           key={item}
                           type="button"
+                          disabled={isSubmitting}
                           onClick={() => setSelectedInterest(item)}
                           className={cn(
                             "rounded-xl px-3.5 py-1.5 text-sm font-medium transition-colors",
                             selectedInterest === item
                               ? "bg-foreground text-background"
                               : "bg-muted text-muted-foreground hover:bg-muted/80",
+                            isSubmitting && "opacity-50 cursor-not-allowed",
                           )}
                         >
                           {item}
@@ -122,13 +169,34 @@ const ProjectCta = ({ className }: ProjectCtaProps) => {
                       id="cta-message"
                       placeholder="What are you looking to build? Any specific goals, timeline, or tools you're using?"
                       rows={4}
+                      disabled={isSubmitting}
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                     />
                   </div>
 
+                  {/* Error message */}
+                  {error && (
+                    <p className="text-sm text-destructive">{error}</p>
+                  )}
+
                   {/* Submit */}
-                  <Button type="submit" className="w-full rounded-xl">
-                    Send Project Details
-                    <ArrowRight className="ml-1 size-4" />
+                  <Button
+                    type="submit"
+                    className="w-full rounded-xl"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="mr-1 size-4 animate-spin" />
+                        Sending…
+                      </>
+                    ) : (
+                      <>
+                        Send Project Details
+                        <ArrowRight className="ml-1 size-4" />
+                      </>
+                    )}
                   </Button>
                 </form>
               )}

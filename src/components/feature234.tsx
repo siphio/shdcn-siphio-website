@@ -55,7 +55,7 @@ const Feature234 = ({ className }: Feature234Props) => {
             variant="secondary"
             className="block h-fit w-fit rounded-full px-6 py-2 text-sm leading-loose"
           >
-            <a href="/agents">See Our Work</a>
+            <a href="https://x.com/siphioai" target="_blank" rel="noopener noreferrer">See Our Work</a>
           </Button>
         </div>
       </div>

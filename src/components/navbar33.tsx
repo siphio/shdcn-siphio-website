@@ -45,12 +45,8 @@ const Navbar33 = ({
     alt: "Siphio",
     href: "/",
   },
-  items = [
-    { label: "Agents", href: "/agents" },
-    { label: "Websites", href: "/websites" },
-    { label: "FAQ", href: "/faq" },
-  ],
-  loginHref = "/contact",
+  items = [],
+  loginHref = "#contact",
   className,
 }: Navbar33Props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

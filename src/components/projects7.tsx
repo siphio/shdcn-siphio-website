@@ -27,7 +27,7 @@ const projectsData: Project[] = [
     image:
       "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
     tags: ["ai-agents", "sales"],
-    href: "/agents/lead-qualifier",
+    href: "#contact",
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const projectsData: Project[] = [
     image:
       "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg",
     tags: ["ai-agents", "support"],
-    href: "/agents/support-resolve",
+    href: "#contact",
   },
   {
     id: 3,
@@ -49,7 +49,7 @@ const projectsData: Project[] = [
     image:
       "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg",
     tags: ["ai-agents", "operations"],
-    href: "/agents/ops-scheduler",
+    href: "#contact",
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ const projectsData: Project[] = [
     image:
       "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-4.svg",
     tags: ["ai-agents", "marketing"],
-    href: "/agents/content-engine",
+    href: "#contact",
   },
   {
     id: 5,

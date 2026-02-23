@@ -72,6 +72,11 @@ const Footer12 = ({ className }: Footer12Props) => {
             </li>
           ))}
         </ul>
+        <img
+          src="/siphio-logo.png"
+          alt="Siphio AI"
+          className="mt-4 h-10 w-auto"
+        />
       </nav>
     </section>
   );
