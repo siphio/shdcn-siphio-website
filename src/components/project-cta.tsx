@@ -14,13 +14,7 @@ interface ProjectCtaProps {
   className?: string;
 }
 
-const interests = [
-  "AI Agent",
-  "Website",
-  "Automated Workflow",
-  "Both",
-  "Not sure yet",
-];
+const interests = ["AI Agent", "Website", "Automated Workflow", "Not sure yet"];
 
 const ProjectCta = ({ className }: ProjectCtaProps) => {
   const [selectedInterest, setSelectedInterest] = useState<string | null>(null);

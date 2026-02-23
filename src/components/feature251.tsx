@@ -38,7 +38,7 @@ const Feature251 = ({ className }: Feature251Props) => {
       <div className="relative z-10 container mx-auto">
         <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-center gap-5">
           {/* 1st Card  */}
-          <Card className="relative h-96 w-166 rounded-3xl border">
+          <Card className="relative h-96 w-full rounded-3xl border md:w-166">
             <CardHeader>
               <h3 className="text-2xl font-semibold tracking-tight">
                 Multi-Platform Integration
@@ -58,7 +58,7 @@ const Feature251 = ({ className }: Feature251Props) => {
               <IconCard
                 ref={div2Ref as React.RefObject<HTMLDivElement>}
                 icon={<HubSpotIcon />}
-                className="translate-x-32"
+                className="translate-x-16 md:translate-x-32"
               />
               <IconCard
                 ref={div3Ref as React.RefObject<HTMLDivElement>}
@@ -68,7 +68,7 @@ const Feature251 = ({ className }: Feature251Props) => {
               <IconCard
                 ref={div5Ref as React.RefObject<HTMLDivElement>}
                 icon={<OpenAIIcon />}
-                className="absolute top-1/2 right-12 -translate-y-1/2"
+                className="absolute top-1/2 right-4 -translate-y-1/2 md:right-12"
               />
               <div
                 ref={div4Ref as React.RefObject<HTMLDivElement>}
@@ -142,7 +142,7 @@ const Feature251 = ({ className }: Feature251Props) => {
           </Card>
 
           {/* 3rd card */}
-          <Card className="relative flex h-96 w-full flex-col rounded-3xl border md:w-[330px]">
+          <Card className="relative flex h-96 w-full flex-col rounded-3xl border sm:w-[330px]">
             <CardContent className="flex items-center justify-center pt-4">
               <WebsiteGraphic />
             </CardContent>
@@ -157,7 +157,7 @@ const Feature251 = ({ className }: Feature251Props) => {
             </CardHeader>
           </Card>
           {/* 4th card */}
-          <Card className="h-96 w-166 overflow-hidden rounded-3xl border">
+          <Card className="h-96 w-full overflow-hidden rounded-3xl border md:w-166">
             <CardHeader>
               <h3 className="text-2xl font-semibold tracking-tight">
                 Global Reach, Local Precision

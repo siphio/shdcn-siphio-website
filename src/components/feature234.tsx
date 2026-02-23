@@ -22,7 +22,7 @@ interface Feature234Props {
 
 const Feature234 = ({ className }: Feature234Props) => {
   return (
-    <section className={cn("relative bg-background pt-40 pb-32", className)}>
+    <section className={cn("relative bg-background pt-28 pb-20 md:pt-40 md:pb-32", className)}>
       {/* Grid background pattern */}
       <div
         className="absolute inset-0 z-0 bg-[linear-gradient(to_right,_var(--muted)_1px,_transparent_1px),linear-gradient(to_bottom,_var(--muted)_1px,_transparent_1px)] bg-[length:32px_32px]"
@@ -34,7 +34,7 @@ const Feature234 = ({ className }: Feature234Props) => {
         }}
       />
       <div className="relative z-10 container mx-auto flex flex-col items-center">
-        <h1 className="mx-auto max-w-4xl text-center font-inter text-[70px] leading-[65px] font-semibold tracking-tighter lg:text-[85px] lg:leading-[86px]">
+        <h1 className="mx-auto max-w-4xl text-center font-inter text-[40px] leading-[40px] font-semibold tracking-tighter sm:text-[55px] sm:leading-[52px] md:text-[70px] md:leading-[65px] lg:text-[85px] lg:leading-[86px]">
           AI agents and websites built to scale your business
         </h1>
         <CardsContainer />
